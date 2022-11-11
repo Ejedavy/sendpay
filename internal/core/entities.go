@@ -19,6 +19,11 @@ type Account struct {
 	Created_at time.Time
 }
 
-type Error struct {
-	Message string
+type Transaction struct {
+	ID         int
+	From       *Account
+	To         *Account
+	Amount     float32
+	Type       string
+	Created_at time.Time
 }
